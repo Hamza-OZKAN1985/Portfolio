@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - OZKAN Hamza</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        /* Styles spécifiques pour centrer le contenu */
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 80px;
+        }
+
+        /* La carte de détails (mise en évidence de l'email/téléphone/LinkedIn/GitHub) */
+        .contact-details {
+            width: 100%;
+            max-width: 600px;
+            background-color: var(--darker-element);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .contact-info-item {
+            margin: 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Utilisation d'icônes ou d'emojis pour un style technique */
+        .icon-mail::before { content: "📧"; }
+        .icon-phone::before { content: "📞"; }
+        .icon-linkedin::before { content: "🔗"; } 
+        .icon-github::before { content: "💻"; } /* Nouvelle icône pour GitHub */
+
+        .contact-info-item span {
+            color: var(--accent-color);
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+        
+        /* Assurez-vous que le texte du lien soit lisible */
+        .contact-info-item a {
+            color: var(--text-light); 
+            text-decoration: none; 
+            margin-left: 10px;
+            transition: color 0.3s;
+        }
+
+        .contact-info-item a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="header-nav">
+        <ul class="nav-list">
+            <li><a href="portfolio.html">Accueil</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+            <li><a href="Entreprise.html">Entreprise</a></li>
+            <li><a href="Competences.html">Compétences & Projet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2 class="section-title">Me Contacter</h2>
+
+        <div class="contact-content">
+            
+            <div class="contact-details">
+                <h3>Informations de Contact et Réseaux</h3>
+                
+                <div class="contact-info-item">
+                    <span class="icon-linkedin"></span>
+                    <strong>Profil LinkedIn :</strong>   
+                    <a href="https://www.linkedin.com/in/hamza-ozkan-2b1b23384/" target="_blank" rel="noopener noreferrer">OZKAN Hamza</a>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="icon-github"></span>
+                    <strong>Profil GitHub :</strong>   
+                    <a href="https://github.com/Hamza-OZKAN?tab=packages" target="_blank" rel="noopener noreferrer">Hamza-OZKAN</a>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="icon-mail"></span>
+                    <strong>Email :</strong> 
+                    <a href="mailto:hamza.ozkan1985@gmail.com">hamza.ozkan1985@gmail.com</a>
+                </div>
+                
+                <div class="contact-info-item">
+                    <span class="icon-phone"></span>
+                    <strong>Téléphone :</strong> 
+                    <a href="tel:+33638407771">06 38 40 77 71</a>
+                </div>
+                
+                <p style="margin-top: 30px; opacity: 0.7;">
+                    Retrouvez mes projets de développement sur GitHub et contactez-moi directement pour toute opportunité professionnelle.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 OZKAN Hamza | Portfolio Technique. | <a href="#">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>
